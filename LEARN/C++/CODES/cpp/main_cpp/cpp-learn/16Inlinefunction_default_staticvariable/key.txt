@@ -1,0 +1,7 @@
+Inline functions offer several advantages over normal functions:
+
+Efficiency: Inline functions are expanded by the compiler at the call site, which eliminates the overhead of function call stack management. This can result in faster execution since there is no need to push and pop the function's stack frame. The inline function's code is inserted directly into the calling code, reducing the function call overhead.
+
+Reduced Function Call Overhead: In normal functions, there is a cost associated with function call overhead, including parameter passing, stack frame setup, and return address management. Inline functions eliminate this overhead by directly incorporating their code at the call site. This can be particularly beneficial for small, frequently called functions.
+
+Compiler Optimization: Inline functions can provide opportunities for better compiler optimization. Since the function's code is inserted at the call site, the compiler has access to more contextual information and can make better optimization decisions, such as constant folding, dead code elimination, and loop unrolling.
