@@ -3,7 +3,7 @@ public class J02 {
         byte age = 34;
         int age2 = 56;
         short age3 = 87;
-        long ageDino = 5666666666666L;  //Mention L for long //Stores only whole numbers 
+        long ageDino = 5666666666666L;  //Mention L or l for long //Stores only whole numbers 
         char ch = 'A';
         float f1 = 5.6f;  //Mention f or F for float
         double d1 = 4.66;//similar to float //can also store fractional numbers/long numbers, u can consider it similar to float but can store more numbers
@@ -15,6 +15,9 @@ public class J02 {
           
         String str = "Harry";
         System.out.println(str); //Println will add new line
+
+        float gg= 2.4;//this will give u mismatch errror
+        float gh=2.4f; //this will not give u an error
 
     }
 }

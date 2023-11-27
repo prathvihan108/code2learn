@@ -5,7 +5,7 @@ public class J03 {
         System.out.println("Enter number 1");
         Scanner sc= new Scanner(System.in);
 
-         //     int a = sc.nextInt(); //if u five floating point number it will show error""input mismatch exception" unlike c++
+         //     int a = sc.nextInt(); //if u give floating point number it will show error""input mismatch exception" unlike c++
         //        float a = sc.nextFloat(); //here u can give integer
         //        System.out.println("Enter number 2");
         //        int b = sc.nextInt();// Reading the variable  "b" using object "sc"of class""Scanner"

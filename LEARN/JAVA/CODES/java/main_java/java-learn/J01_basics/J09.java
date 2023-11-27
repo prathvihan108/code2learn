@@ -20,4 +20,13 @@ public static void main(String[] args) {
    System.out.println(res);
 }
 }
+/* 
+ * 
+ *
+ * String str = "Hello";
+str = "hi";
+In Java, when you declare a String variable and then assign a new value to it, you are essentially 
+creating a new String object and updating the reference to point to the new object. The original string, 
+if no longer referenced by any variable, becomes eligible for garbage collection. 
+*/
 

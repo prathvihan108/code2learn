@@ -23,3 +23,19 @@ public class J24 {
 
     }
 }
+/*
+ * 
+ * 
+ * // Both of these declarations are equivalent
+int[] numbers1;
+int numbers2[];
+
+// Both of these declarations are equivalent
+String[] names1;
+String names2[];
+
+// Both of these declarations are equivalent
+double[] scores1;
+double scores2[];
+
+ */

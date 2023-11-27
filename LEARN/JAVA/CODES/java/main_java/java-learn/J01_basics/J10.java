@@ -8,7 +8,7 @@ public class J10 {
         // String name = new String("Harry");
         // String name = "Harry";
         // System.out.print("The name is: ");
-        // System.out.print(name);
+        // System.out.print(name);  //will cause an error
         int a = 6;
         float b = 5.6454f;
         System.out.printf("The value of a is %d and value of b is %8.2f", a, b);// note here we have used printf which is also used in c/c++
