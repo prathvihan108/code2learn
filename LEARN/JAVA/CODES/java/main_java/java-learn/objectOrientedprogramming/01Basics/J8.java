@@ -60,7 +60,7 @@ class GuessNumber
     }
 }
 
-
+//if the getdata() method was  a static in the  the above class than we could have directly used "ClassName.methodName()" for calling the method
 public class J8 {
     public static void main(String[] args) {
         GuessNumber obj = new GuessNumber(); //whwen ever objected is created constructor does its job

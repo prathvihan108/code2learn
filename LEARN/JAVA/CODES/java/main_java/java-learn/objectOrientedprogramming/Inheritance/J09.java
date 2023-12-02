@@ -1,0 +1,54 @@
+//Dynamic method dispatch
+
+
+class Phone  //Base Class
+{
+    public void greet()
+    {
+        System.out.println("Grreting phone");
+    }
+
+    public void On()
+    {
+        System.out.println("phone is on");
+    }
+}
+
+class SmartPhone extends Phone  //subClass
+{
+    public void greet()
+    {
+        System.out.println("Grreting Smartphone");
+    }
+
+    public void On()
+    {
+        System.out.println("Smartphone is on");
+    }
+}
+
+public class J09 {
+    public static void main(String[] args) {
+
+        Phone obj1=new Phone(); ///This ok as we know
+        obj1.greet();
+        obj1.On();
+        
+        SmartPhone obj2=new SmartPhone(); //this is also ok as we know
+        obj2.greet();
+        obj1.On();
+
+        Phone obj3= new SmartPhone();  //Note:we can also  assign object of subclass to super classs  reference 
+        obj3.greet();
+        obj3.On(); //here the On() method is present in both the classes but in this case the On() method of subClass will run
+                    //Easy to remember:The Method in the class of object created will run
+       
+                    // SmartPhone obj4=new Phone();  this is  not possible
+
+        
+    }
+
+}
+
+
+

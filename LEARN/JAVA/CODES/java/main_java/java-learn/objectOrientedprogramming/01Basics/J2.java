@@ -1,7 +1,11 @@
 
 
-class Employee{
-    int salary; //these are in default scope class variables available in side the class only
+class Employee{/*
+    In the example above, Employee is a top-level class because it is not defined
+     within another class or interface. It's the main class that contains the main method 
+     for a standalone Java application. */
+   
+     int salary; //these are in default scope class variables available in side the class only
     String name;
 
     public int getSalary(){
