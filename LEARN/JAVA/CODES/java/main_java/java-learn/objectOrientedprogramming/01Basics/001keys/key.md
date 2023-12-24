@@ -46,19 +46,19 @@ public vs private vs default vs protected when used as suffix for class variable
 ##########################################################################################
 
 
-Access Modifier	within class	within package	outside package by subclass only  outside ppackage                          
+Access Modifier	within class	within package	outside package by subclass only()  outside ppackage                          
 public	            y               y               y                               y
 protected	        y               y               y                               n
 Default             y               y               n                              n
 private	            y               n               n                               n
-
+//note:one which inheriit the class from another package is reffered here as a "outside package by sub class"
 //notice: that:Even protected can be accessed within package directly by object,and also ouside the packge but only by subclasses
 
 //private is accessible only within class directly
 
 //Default is within the package ,but not outside of package or subclass too
 
-//public accessible every where
+//public accessible every whereherit the the class from another package
 
 //these rules are applicable for both class variables and class methods
 

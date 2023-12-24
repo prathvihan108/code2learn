@@ -21,7 +21,7 @@ class SmartPhone extends Phone  //subClass
         System.out.println("Grreting Smartphone");
     }
 
-    public void On()
+    public void On()  //you can check by changing this function to off
     {
         System.out.println("Smartphone is on");
     }
