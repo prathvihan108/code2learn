@@ -11,7 +11,7 @@ public class J18 {
     }
 }
 
-//If we have not implemented the tostring methods by default java will print object code
+//If we have not implemented the toString method by default java will print object code by calling its own toString
 
 class Student
 {

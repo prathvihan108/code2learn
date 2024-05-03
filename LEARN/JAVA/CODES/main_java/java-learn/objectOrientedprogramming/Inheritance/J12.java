@@ -9,8 +9,10 @@ Usage:
 
     Default methods are useful for adding new methods to existing interfaces without 
     forcing all implementing classes to provide an implementation.
- */
-
+ *///note :  if a class is implementing two interfaces ,then if both the innter faces are having default methods,
+ //we get an compilation error
+ //The primary motivation for interfaces was to solve this problem only which still holds good with interfaces
+ //so a calss can not implement 2 interfaces with each having default methods
 interface MyInterface {
     // Abstract method
     void regularMethod();

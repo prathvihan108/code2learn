@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "J01",
+            "request": "launch",
+            "mainClass": "J01",
+            "projectName": "Queues_dfdf2235"
+        },
+        {
+            "type": "java",
+            "name": "J02",
+            "request": "launch",
+            "mainClass": "J02",
+            "projectName": "Queues_dfdf2235"
+        },
+        {
+            "type": "java",
+            "name": "J03",
+            "request": "launch",
+            "mainClass": "J03",
+            "projectName": "Queues_dfdf2235"
+        },
+        {
+            "type": "java",
+            "name": "PlantWaterAutomationSystem",
+            "request": "launch",
+            "mainClass": "PlantWaterAutomationSystem",
+            "projectName": "Queues_dfdf2235"
+        },
+        {
+            "type": "java",
+            "name": "plant1",
+            "request": "launch",
+            "mainClass": "plant1",
+            "projectName": "Queues_dfdf2235"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 
-//If we have not implemented the tostring methods by default java will print object code,ckeck out put:
+//If we have not implemented the tostring methods by default java will print object code,ckeck out put:Student@251a69d7
 
 public class J19 {
 
