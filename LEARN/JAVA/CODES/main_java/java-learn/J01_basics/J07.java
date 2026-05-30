@@ -1,4 +1,6 @@
-//java is strictly typed language
+//java is strictly typed language:Enforces type safety — no automatic/incompatible type conversions.
+//No, not all statically typed languages are strictly typed.
+
 
 public class J07 {
     public static void main(String[] args) {

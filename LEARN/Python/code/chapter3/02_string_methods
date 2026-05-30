@@ -1,0 +1,80 @@
+# 1. Case Conversions
+# Used constantly for normalizing user input (e.g., making "Yes" and "yes" look the same).
+
+# .lower(): Converts all characters to lowercase.
+
+# .upper(): Converts all characters to uppercase.
+
+# .capitalize(): Capitalizes only the first character.
+
+# .title(): Capitalizes the first letter of every word.
+
+# Gemini said
+# While the square brackets [] handle the "grabbing," Python has a massive set of methods (functions attached to strings) for "transforming" and "analyzing."
+
+# Here are the most frequently used string methods, categorized by what they actually do.
+
+# 1. Case Conversions
+# Used constantly for normalizing user input (e.g., making "Yes" and "yes" look the same).
+
+# .lower(): Converts all characters to lowercase.
+
+# .upper(): Converts all characters to uppercase.
+
+# .capitalize(): Capitalizes only the first character.
+
+# .title(): Capitalizes the first letter of every word.
+
+# 2. Cleaning and Trimming
+# Essential when dealing with user data or file reading where extra spaces might exist.
+
+# .strip(): Removes whitespace (and newlines) from both ends.
+
+# .lstrip() / .rstrip(): Removes whitespace from only the Left or Right side.
+
+# .replace("old", "new"): Replaces all occurrences of a substring with another.
+
+# 3. Searching and Positioning
+# Used to find where specific text lives within a larger string.
+
+# .find(sub): Returns the index of the first occurrence of sub. Returns -1 if not found.
+
+# .index(sub): Same as .find(), but crashes your program with an error if not found.
+
+# .count(sub): Returns how many times sub appears in the string.
+
+# 4. Splitting and Joining
+# These are the "Power Couple" of string manipulation.
+
+# .split(separator): Breaks a string into a List based on the separator (default is a space).
+
+# .join(iterable): Takes a list of strings and merges them into one string using the main string as the "glue."
+
+# 5. Validation (The "Is" family)
+# These return True or False. Perfect for if statements.
+
+# .startswith("prefix"): Checks if the string begins with a certain value.
+
+# .endswith("suffix"): Checks if it ends with a certain value (e.g., checking for .jpg).
+
+# .isdigit(): Returns True if the string contains only numbers.
+
+# .isalpha(): Returns True if the string contains only letters.
+
+raw_data = "  johN dOE, 25, NEW YORK  "
+
+# 1. Clean the data
+clean_data = raw_data.strip() # "johN dOE, 25, NEW YORK"
+
+# 2. Break into a list
+parts = clean_data.split(", ") # ["johN dOE", "25", "NEW YORK"]
+
+# 3. Format specific parts
+name = parts[0].title() # "John Doe"
+is_number = parts[1].isdigit() # True
+
+# 4. Join back together with a hyphen
+final_string = "-".join(parts) # "johN dOE-25-NEW YORK"
+
+print(f"Name: {name}")
+print(f"Age is valid: {is_number}")
