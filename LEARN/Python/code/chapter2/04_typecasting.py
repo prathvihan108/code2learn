@@ -66,3 +66,5 @@ print(bool(1))      # True
 print(bool(-1))     # True (non-zero integers are True)
 print(bool(""))     # False (empty string)
 print(bool("No"))   # True (non-empty string)
+print(bool())      # False(empty string)
+

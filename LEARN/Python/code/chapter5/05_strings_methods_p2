@@ -1,0 +1,64 @@
+# ==============================================================================
+# SPECIALIZED & ADVANCED STRING OPERATIONS (PART 2)
+# ==============================================================================
+
+# 1. PADDING AND ALIGNMENT (Great for printing clean tables or dashboards)
+# ------------------------------------------------------------------------------
+code_id = "751"
+
+# .zfill(width) pads the start of a string with zeros until it reaches the total width
+print(code_id.zfill(6))      # Output: "000751"
+
+# .ljust(), .rjust(), and .center() pad strings with spaces (or a custom character)
+name = "Alice"
+print(name.rjust(10, "."))   # Output: ".....Alice" (Aligns right, fills left)
+print(name.center(11, "-"))  # Output: "---Alice---" (Centers perfectly)
+
+
+# 2. ADVANCED BOUNDARY SCANNING
+# ------------------------------------------------------------------------------
+# Both .startswith() and .endswith() can accept a TUPLE of multiple strings. 
+# It returns True if it matches ANY of the options.
+# methods startwith() and endwith()can take tuples of strings to check against multiple possibilities at once.(note: the tuple must be enclosed in parentheses)
+url = "https://example.com"
+print(url.startswith(("http://", "https://")))  # Output: True
+
+image_file = "photo.png"
+print(image_file.endswith((".jpg", ".jpeg", ".png", ".gif")))  # Output: True
+
+
+# 3. CASE INVERSION AND EVALUATION
+# ------------------------------------------------------------------------------
+mixed_text = "Python 3.14"
+
+# .swapcase() flips all uppercase letters to lowercase, and vice versa
+print(mixed_text.swapcase())  # Output: "pYTHON 3.14"
+
+# Checking current case status
+print("abc".islower())        # Output: True (Are all alphabetical characters lowercase?)
+print("ABC".isupper())        # Output: True (Are all alphabetical characters uppercase?)
+
+
+# 4. PARTITIONING (A specialized alternative to split)
+# ------------------------------------------------------------------------------
+# Unlike .split(), .partition(separator) always breaks a string into exactly 
+# three parts: (everything_before, separator, everything_after).
+
+email = "user@domain.com"
+before, sep, after = email.partition("@")
+
+print("4a. Before @:", before)  # Output: "user"
+print("4b. The Separator:", sep) # Output: "@"
+print("4c. After @:", after)   # Output: "domain.com"
+
+
+# 5. REMOVING PREFIXES AND SUFFIXES (Safer than using strip)
+# ------------------------------------------------------------------------------
+# .strip() removes matching individual characters. If you want to drop whole words 
+# from the edges cleanly, use .removeprefix() and .removesuffix().
+
+title = "Dr. Strange"
+print(title.removeprefix("Dr. "))  # Output: "Strange"
+
+backup_file = "data.db.bak"
+print(backup_file.removesuffix(".bak"))  # Output: "data.db"
